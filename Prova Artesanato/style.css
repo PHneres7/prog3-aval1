@@ -1,0 +1,381 @@
+html {
+    background-color: #E6E5A3;
+}
+
+body {
+    border: 5px solid #7D8F69;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+/* modifica o background do header */
+.navbar {
+    background-image: linear-gradient(300deg, #a99c4d 0, #5a522c 50%, #15120b 100%);
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 100%;
+}
+
+/* tamanho do header */
+.fundo-header {
+    width: 100%;
+    height: 100px;
+}
+
+
+/* muda o tamanho da logo */
+.img-logo {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+/* barra de navegação */
+nav {
+    background-color: #7D8F69;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+}
+
+/* muda a fonte de toda a barra de navegação */
+.navbar-nav {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* modifica os botoes de navegação */
+ul {
+    margin-right: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* espaçamento entre os botoes da barra de navegação */
+.nav-item {
+    padding: 10px;
+}
+
+/* modifica a font dos botoes da barra de navageção */
+.nav-link {
+    text-decoration: none;
+    color: #E6E5A3;
+
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* imagem banner principal */
+.img-banner {
+    width: 100%;
+    height: auto;
+}
+
+/* parte de mais vendidos */
+.mais-vendidos {
+    margin: 0;
+    background-color: #E6E5A3;
+}
+
+/* modifica o Titulo dos mais vendidos */
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+/* Texto Vermelho do titulo */
+.texto-principal {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    margin-right: 12px;
+    padding-top: 20px;
+    padding-right: 0;
+    text-align: center;
+    font-size: 45px;
+    color: red;
+}
+
+/* Segunda parte do texto */
+.texto-secundario {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+    font-size: 25px;
+    color: #362706;
+}
+
+/* lista dos 3 produtos */
+.produtos-principais {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* rodape */
+.rodape {
+    background-color: #7D8F69;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* distancia de contatos para esquerda  */
+.contato {
+    padding-left: 5%;
+}
+
+/* modifica os icones */
+.icons {
+    width: 25px;
+    margin-right: 5px;
+}
+
+/* conjunto icone + nome {facebook e instagram} */
+.conjunto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+/* distancia equipe para direita */
+.equipe {
+    margin-right: 5%;
+}
+
+/* todas as imagens de produtos */
+.img-fluid {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+
+}
+
+/* container de produtos */
+.row {
+    background-color: #E6E5A3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
+
+}
+
+/* cada produto */
+.product {
+    background-color: #7D8F69;
+    width: 300px;
+    height: 400px;
+    margin: 20px 10px 20px 10px;
+    border: 10px solid #7D8F69;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+/* faixa com nome do produto */
+.nome-produto {
+    color: #E6E5A3;
+    text-align: center;
+    margin: 0
+}
+
+/* Faixa de descrição do produto */
+.desc {
+    margin: 0;
+    padding: 0 5% 0 5%;
+    color: #E6E5A3;
+}
+
+/* Toda a formatação do preço */
+.price {
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #D9D9D9;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Quando a largura da tela for igual ou menor que 480px, vai alterar a largura dos produtos e imagens */
+@media(max-width:480px) {
+
+    /* largura dos produtos */
+    .product {
+        width: 80%;
+    }
+
+    /* tamanho das imagens dos produtos */
+    .img-fluid {
+        width: 90%;
+    }
+
+    /* font das descrições */
+    .desc {
+        font-size: 15px;
+    }
+
+    /* deixa a barra de navegação flex e ativa o wrap */
+    .navbar-nav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+}
+
+@media(max-width:870px) {
+
+    /* deixa o rodape flex e em coluna{um abaixo do outro} */
+    .rodape {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* contato no centro */
+    .contato {
+        align-self: center;
+        padding: 0;
+        width: 50%;
+
+    }
+
+    /* deixa no centro */
+    .Redes-Sociais {
+        align-self: center;
+        padding: 0;
+        width: 50%;
+
+    }
+
+    /* deixa no centro */
+    .redes {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    /* deixa no centro */
+    .equipe {
+        align-self: center;
+        padding: 0;
+        width: 50%;
+
+    }
+}
+
+@media(max-width:1100px) {
+
+    /* Deixa os produtos em colunas no centro */
+    .produtos-principais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* deixa o titulo no centro em colunas */
+    .titulo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-principal {
+        font-size: 30px;
+    }
+
+    .texto-secundario {
+        font-size: 20px;
+    }
+
+}
+
+/* posição do titulo de Sobre */
+.titulo-sobre {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* imagem oficina */
+.img-oficina {
+    width: 100%;
+    border: 5px solid #7D8F69;
+    border-radius: 20px;
+
+}
+
+/* margin na parte final de sobre */
+.final {
+    margin: 20px;
+}
+
+/* margin nos textos de Sobre */
+.sobre {
+    margin: 0 30px;
+}
+
+/* diminui a logo nessa largura */
+@media(max-width:320px) {
+    .img-logo {
+        width: 80%;
+    }
+}
+
+.contact-msg {
+    margin-left: 5%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding-right: 50%;
+    padding-left: 5%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea.form-control {
+    height: 100px;
+}
+
+.btn-primary {
+    background-color: #7D8F69;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #5a522c;
+}
